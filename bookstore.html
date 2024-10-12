@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Manager</title>
+    <link rel="stylesheet" href="bookstore.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bookstore Manager</h1>
+        <div class="form-group">
+            <label for="bookName">Name of the Book:</label>
+            <input type="text" id="bookName">
+        </div>
+        <div class="form-group">
+            <label for="bookAuthor">Writer of the Book:</label>
+            <input type="text" id="bookAuthor">
+        </div>
+        <div class="form-group">
+            <label for="bookPrice">Price of the Book:</label>
+            <input type="number" id="bookPrice">
+        </div>
+        <button onclick="addBook()">Add Book</button>
+
+        <h2>Book Records</h2>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book records will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bookstore.js"></script>
+</body>
+</html>
